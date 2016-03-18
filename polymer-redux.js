@@ -1,11 +1,11 @@
 (function(root, factory) {
-    if (typeof exports === 'object' && typeof module === 'object') {
-        module.exports = factory(require('redux'));
-    } else if (typeof define === 'function' && define.amd) {
-        define(['redux'], factory);
-    } else {
+    // if (typeof exports === 'object' && typeof module === 'object') {
+    //     module.exports = factory(require('redux'));
+    // } else if (typeof define === 'function' && define.amd) {
+    //     define(['redux'], factory);
+    // } else {
         root['PolymerRedux'] = factory(root.Redux);
-    }
+    // }
 })(this, function(Redux) {
     var warning = 'Polymer Redux: <%s>.%s has "notify" enabled, two-way bindings goes against redux\'s paradigm';
 
